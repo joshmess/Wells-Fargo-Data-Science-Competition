@@ -3,15 +3,15 @@ import pandas as pd
 import matplotlib as mtp
 import math
 
-NUM_ROWS_WITH_NAN = 849
-NUM_NANS = 882
+NUM_ROWS_WITH_NAN_TEST = 849
+NUM_NANS_TEST = 882
 
 def main():
 
     # Load Data Sets
-    test_set = pd.read_csv('Simulated_Data_Test.csv')
-    train_set = pd.read_csv('Simulated_Data_Train.csv')
-    validation_set = pd.read_csv("Simulated_Data_Validation.csv")
+    test_set = pd.read_csv('Data/Simulated_Data_Test.csv')
+    train_set = pd.read_csv('Data/Simulated_Data_Train.csv')
+    validation_set = pd.read_csv("Data/Simulated_Data_Validation.csv")
 
     # Extract predictors and default indicator
     testX = test_set.iloc[:, :-1].values
