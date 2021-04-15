@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib as mtp
 import math
 
+
 if __name__ == '__main__':
 
     # Load Data

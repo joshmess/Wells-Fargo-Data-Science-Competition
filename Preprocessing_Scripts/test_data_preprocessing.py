@@ -11,7 +11,6 @@ if __name__ == '__main__':
 
     # Extract predictors and default indicator
     testX = test_set.iloc[:, :-2].values
-    print(testX)
     testY = test_set.iloc[:, 20].values
 
     # Calculate Mean rep-income
