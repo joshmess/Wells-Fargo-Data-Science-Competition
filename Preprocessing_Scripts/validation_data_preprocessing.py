@@ -31,7 +31,7 @@ if __name__ == '__main__':
                 validationX[r][c] = mean_rep_income
 
     # Calculate Mean uti_card_50plus_pct
-    uti_card_50plus_pct = validationX.iloc[:, 16].values
+    uti_card_50plus_pct = validation_set.iloc[:, 16].values
     sum = 0
     number = 0
     for val in uti_card_50plus_pct:
@@ -45,3 +45,5 @@ if __name__ == '__main__':
         for c in range(len(validationX[r])):
             if c == 16 and math.isnan(validationX[r][c]):
                 validationX[r][c] = mean_uti_card_50plus_pct
+
+    print(validationX)
